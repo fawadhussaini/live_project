@@ -9,5 +9,8 @@
         <module name="live_project" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Employee_Management" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
