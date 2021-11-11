@@ -1,19 +1,20 @@
 package impl;
 
-import pages.HomePage;
+import pages.LoginPage;
 import utils.ConfigReader;
 import utils.WebDriverUtils;
 
-public class HomeImpl {
-    HomePage page;
+public class LoginImpl {
 
-    public HomePage getPage(){
+    LoginPage page;
+
+
+    public LoginPage getPage(){
         if(page == null)
-            page = new HomePage();
+            page = new LoginPage();
         return page;
     }
-
-    public void navigateToHomepage(){
+    public void navigateToLoginPage(){
         WebDriverUtils.getDriver().get(ConfigReader.readProperty("url"));
     }
 

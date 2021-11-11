@@ -5,9 +5,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utils.WebDriverUtils;
 
-public class HomePage {
+public class AdminPage {
 
-    public HomePage (){
+    public AdminPage(){
         PageFactory.initElements(WebDriverUtils.getDriver(), this);
     }
 
