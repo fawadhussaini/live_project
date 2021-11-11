@@ -16,6 +16,7 @@ public class HomeSteps {
     @Then("User should see title is {string}")
     public void user_should_see_title_is(String expectedTitle) {
         Assert.assertEquals(expectedTitle , WebDriverUtils.getDriver().getTitle());
+
     }
 
 
