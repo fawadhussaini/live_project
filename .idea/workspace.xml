@@ -5,20 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cea8ca6c-2225-4f71-a835-d6befd40a96d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/impl/HomeImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/steps/HomeSteps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/WebDriverUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/WebDriverUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/home.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/User.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/features/home.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/impl/HomeImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/HomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/steps/HomeSteps.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/WebDriverUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/WebDriverUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cukesRunner.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/failed-scenarios/cukes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/steps/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/LoginSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/features/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/steps/LoginSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/steps/LoginSteps.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +41,26 @@
       <recent name="utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: When I sign in with admin credentials it should take me to admin page and user credentials to User page.">
+  <component name="RunManager" selected="JUnit.CukesRunner">
+    <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/Login.feature" />
+      <option name="GLUE" value="steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="live_project" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: Login" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: Verify Apple title" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/User.feature" />
@@ -89,6 +101,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CukesRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="live_project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CukesRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,6 +123,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CukesRunner" />
+        <item itemvalue="Cucumber Java.Feature: Login" />
         <item itemvalue="Cucumber Java.Scenario: When I sign in with admin credentials it should take me to admin page and user credentials to User page." />
         <item itemvalue="Cucumber Java.Scenario: Verify Apple title" />
       </list>
@@ -128,5 +151,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utils.WebDriverUtils;
 
+import javax.xml.xpath.XPath;
+
 public class LoginPage {
 
     public LoginPage(){
@@ -19,6 +21,16 @@ public class LoginPage {
 
     @FindBy(xpath = "//button[@class='btn btn-primary mb-4']")
     public WebElement SignInBtn;
+
+    @FindBy(xpath = "//div//nav//a")
+    public WebElement welcomeuserTxt;
+
+    @FindBy(xpath = "//div//nav//a//h5")
+    public WebElement welcomeAdminTxt;
+
+    @FindBy(xpath = "//div[@class='rounded']")
+    public WebElement loginErrorTxt;
+
 
 
 

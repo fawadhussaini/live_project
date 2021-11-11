@@ -1,8 +1,10 @@
 package steps;
 
 import impl.LoginImpl;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
 
 public class LoginSteps {
 
@@ -15,19 +17,37 @@ public class LoginSteps {
 
     }
 
-    @Given("I enter username = user and password = user123 and click on Sign in button")
-    public void i_enter_username_user_and_password_user123_and_click_on_sign_in_button() throws InterruptedException {
-     impl.getPage().usernameInput.sendKeys("user");
-     Thread.sleep(1000);
-     impl.getPage().passwordInput.sendKeys("user123");
-     Thread.sleep(1000);
-     impl.getPage().SignInBtn.click();
-
-    }
-
     @Then("I should see the WELCOME USER!")
-    public void i_should_see_the_welcome_user() {
+    public void i_should_see_the_user() {
+     Assert.assertEquals("WELCOME USER !" , impl.getPage().welcomeuserTxt.getText());
 
     }
 
+
+
+    @Then("I should see the WELCOME ADMIN!")
+    public void iShouldSeeTheWELCOMEADMIN() {
+     Assert.assertEquals("WELCOME ADMIN !", impl.getPage().welcomeAdminTxt.getText());
+    }
+
+
+ @And("I enter username as  {string} and password as {string} and click on Sign in button")
+ public void iEnterUsernameAsAndPasswordAsAndClickOnSignInButton(String username, String password) {
+  impl.getPage().usernameInput.sendKeys(username);
+
+  impl.getPage().passwordInput.sendKeys(password);
+
+  impl.getPage().SignInBtn.click();
+ }
+
+ @Then("I should see the Incorrect password error")
+ public void iShouldSeeTheIncorrectPasswordError() {
+      Assert.assertEquals("Incorrect password" , impl.getPage().loginErrorTxt.getText());
+
+ }
+
+ @Then("I should see the Incorrect Invalid username error")
+ public void iShouldSeeTheIncorrectInvalidUsernameError() {
+  Assert.assertEquals("Invalid username" , impl.getPage().loginErrorTxt.getText());
+ }
 }
