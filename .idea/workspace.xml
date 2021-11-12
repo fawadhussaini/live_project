@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cea8ca6c-2225-4f71-a835-d6befd40a96d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/src/main/java/impl/UserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/impl/UserImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/UserPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/UserPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/steps/UserSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/UserSteps.java" afterDir="false" />
@@ -14,6 +15,7 @@
       <change beforePath="$PROJECT_DIR$/target/classes/impl/UserImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/impl/UserImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pages/UserPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/UserPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/steps/UserSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/steps/UserSteps.class" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +45,7 @@
       <recent name="utils" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CukesRunner">
+  <component name="RunManager" selected="Cucumber Java.Feature: Login">
     <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/Login.feature" />
@@ -136,6 +138,7 @@
         <item itemvalue="Cucumber Java.Scenario: Verify employee data table" />
         <item itemvalue="Cucumber Java.Feature: User" />
         <item itemvalue="Cucumber Java.Feature: Login" />
+        <item itemvalue="JUnit.CukesRunner" />
         <item itemvalue="Cucumber Java.Scenario: When I sign in with admin credentials it should take me to admin page and user credentials to User page." />
       </list>
     </recent_temporary>
