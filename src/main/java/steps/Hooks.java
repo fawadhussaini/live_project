@@ -4,7 +4,8 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import utils.WebDriverUtils;
 
-public class Hooks {
+public class
+Hooks {
 
 
     @Before
