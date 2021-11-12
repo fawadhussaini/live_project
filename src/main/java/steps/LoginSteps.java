@@ -5,6 +5,8 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
+import utils.CucumberLogUtils;
+
 
 public class LoginSteps {
 
@@ -28,6 +30,7 @@ public class LoginSteps {
     @Then("I should see the WELCOME ADMIN!")
     public void iShouldSeeTheWELCOMEADMIN() {
      Assert.assertEquals("WELCOME ADMIN !", impl.getPage().welcomeAdminTxt.getText());
+
     }
 
 
@@ -38,16 +41,19 @@ public class LoginSteps {
   impl.getPage().passwordInput.sendKeys(password);
 
   impl.getPage().SignInBtn.click();
+
  }
 
  @Then("I should see the Incorrect password error")
  public void iShouldSeeTheIncorrectPasswordError() {
       Assert.assertEquals("Incorrect password" , impl.getPage().loginErrorTxt.getText());
 
+
  }
 
  @Then("I should see the Incorrect Invalid username error")
  public void iShouldSeeTheIncorrectInvalidUsernameError() {
   Assert.assertEquals("Invalid username" , impl.getPage().loginErrorTxt.getText());
+
  }
 }
