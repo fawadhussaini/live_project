@@ -6,14 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cea8ca6c-2225-4f71-a835-d6befd40a96d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/impl/UserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/impl/UserImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/UserPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/UserPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/steps/UserSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/UserSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/User.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/User.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sopisa.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/impl/UserImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/impl/UserImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/UserPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/UserPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/steps/UserSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/steps/UserSteps.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
