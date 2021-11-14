@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cea8ca6c-2225-4f71-a835-d6befd40a96d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/impl/AdminImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/impl/AdminImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AdminPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/steps/AdminSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/AdminSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/SeleniumUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/SeleniumUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/WebDriverUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/WebDriverUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/Admin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/Admin.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CukesRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/features/Admin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/features/Admin.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/impl/AdminImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/impl/AdminImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/AdminPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/AdminPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/steps/AdminSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/steps/AdminSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/steps/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/steps/Hooks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/SeleniumUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/SeleniumUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/WebDriverUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/WebDriverUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CukesRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CukesRunner.class" afterDir="false" />
-    </list>
+    <list default="true" id="cea8ca6c-2225-4f71-a835-d6befd40a96d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
