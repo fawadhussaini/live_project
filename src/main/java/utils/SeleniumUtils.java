@@ -1,8 +1,10 @@
 package utils;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import java.time.Duration;
 import java.util.Set;
 
 public class SeleniumUtils {
@@ -27,5 +29,15 @@ public class SeleniumUtils {
         select.selectByVisibleText(textValue);
     }
 
+    public static boolean isElementDisplayed(WebElement element) {
+        WebDriverUtils.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
+        try {
+            return element.isDisplayed();
+        } catch (NoSuchElementException e) {
+            return false;
+        } finally {
+            WebDriverUtils.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        }
 
+    }
 }

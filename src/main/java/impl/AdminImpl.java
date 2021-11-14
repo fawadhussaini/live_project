@@ -52,5 +52,7 @@ public class AdminImpl {
         return false;
     }
 
-
+    public boolean empTableEx() {
+        return page.employeeTable.isDisplayed();
+    }
 }

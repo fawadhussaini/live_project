@@ -24,4 +24,25 @@ public class AdminPage {
     //this xpath locates the element that contains warning message for trying to delete roles and departments
     @FindBy(id = "submit-btn")
     public WebElement deleteBtnsWarning;
+
+    @FindBy(css = ".container .table")
+    public WebElement employeeTable;
+
+    @FindBy(name = "id")
+    public WebElement empId;
+
+    @FindBy(name = "firstName")
+    public WebElement firstName;
+
+    @FindBy(name = "lastName")
+    public WebElement lastName;
+
+    @FindBy(name = "role")
+    public WebElement empRole;
+
+    @FindBy(name = "department")
+    public WebElement department;
+
+
+
 }
