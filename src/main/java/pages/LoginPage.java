@@ -10,8 +10,10 @@ import javax.xml.xpath.XPath;
 public class LoginPage {
 
     public LoginPage(){
+
         PageFactory.initElements(WebDriverUtils.getDriver(), this);
     }
+
 
     @FindBy(xpath = "//input[@name ='username']")
     public WebElement usernameInput;
