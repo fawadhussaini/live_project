@@ -11,6 +11,7 @@ Feature: Admin page scenarios
   Scenario: I should not be able to delete Role or Department if it is assigned to an employee
     Then I should not be able to delete Role or Department if it is assigned to an employee
 
+<<<<<<< HEAD
 #  Scenario: I need options to Edit employees in Employee data table
 #    When I click on edit employee data button
 #    And I should be able to change employee role from "sdet"
@@ -27,3 +28,13 @@ Feature: Admin page scenarios
       |Edit       |
       |Delete     |
 
+=======
+  Scenario:  Verify Employee is populate as Admin
+    When I input "ID" as "1011"
+    And I input "firstname" as "GamesAdmin"
+    And I input "lastname" as "WongAdmin"
+    And  I input "Selecrole" as "sdet"
+    And  I input "Selecdepartment" as "Security"
+    Then I click Enter button
+    Then Employee is populate in the data table
+>>>>>>> f294fad8988e97251d0c7b65d36e67e0a28e4aef

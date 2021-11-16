@@ -6,11 +6,13 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import pages.AdminPage;
 import utils.CucumberLogUtils;
 import utils.WebDriverUtils;
 
 public class AdminSteps {
     AdminImpl impl = new AdminImpl();
+
 
 
     @Then("I should see a number for each role and department")
@@ -21,11 +23,11 @@ public class AdminSteps {
     @Then("I should not be able to delete Role or Department if it is assigned to an employee")
     public void iShouldNotBeAbleToDeleteRoleOrDepartmentIfItIsAssignedToAnEmployee() throws InterruptedException {
         Assert.assertFalse(impl.deleteRoleOrDepartment());
+
     }
 
-
     @Then("I verify {string} button is enabled")
-    public void iVerifyButtonIsEnabled(String btnName) {
+    public void iVerifyButtonIsEnabled(String btnName)  {
         boolean enabled = false;
 
         switch (btnName.toLowerCase()){
@@ -37,4 +39,25 @@ public class AdminSteps {
 
         Assert.assertTrue(enabled);
     }
+
+
+
+    @When("I input {string} as {string}")
+    public void i_input_as(String inputFieldName, String value) {
+        impl.fillInputField(inputFieldName, value);
+    }
+
+    @Then("I click Enter button")
+    public void iClickEnterButton() throws InterruptedException {
+        impl.getPage().Enter.click();
+        Thread.sleep(2000);
+    }
+
+    @Then("Employee is populate in the data table")
+    public void employeeIsPopulateInTheDataTable() {
+        Assert.assertEquals("success", impl.verifyEachUserFields());
+    }
+
+
+
 }

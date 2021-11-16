@@ -5,8 +5,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import pages.AdminPage;
+import utils.ConfigReader;
+import utils.SeleniumUtils;
+import utils.WebDriverUtils;
+
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 
 public class AdminImpl {
+
 
     AdminPage page = new AdminPage();
 
@@ -15,7 +23,6 @@ public class AdminImpl {
             page = new AdminPage();
         return page;
     }
-
 
     //this method checks if each role and department has a count
     public boolean countForRolesAndDepartments() throws InterruptedException {
@@ -58,9 +65,49 @@ public class AdminImpl {
         return false;
     }
 
-//    //this method is used for test Edit button at employee data table is enabled or not
-//    public boolean isEnabled() {
-//        return page.editEmpDataBtn.isEnabled();
-//    }
+
+
+    Map<String, String> userFieldInputsMap = new LinkedHashMap<>();
+
+    public void fillInputField(String inputFieldName, String value){
+        switch (inputFieldName){
+            case "ID": getPage().Id.sendKeys(value);
+                break;
+            case "firstname": getPage().FirstName.sendKeys(value);
+                break;
+            case "lastname": getPage().LastName.sendKeys(value);
+                break;
+            case "Selecrole":
+                SeleniumUtils.selectByVisibleText(getPage().SelectRole, value);
+                break;
+            case "Selecdepartment":
+                SeleniumUtils.selectByVisibleText(getPage().SelectDepartment, value);
+                break;
+            default:
+                System.out.println("Field name was not found...");
+        }
+        userFieldInputsMap.put(inputFieldName, value);
+    }
+
+    public String verifyEachUserFields(){
+        String result = "success";
+        List<WebElement> allTds = getPage().userTableRows.findElements(By.xpath("//tbody//tr"));
+
+        for(String eachField: userFieldInputsMap.keySet()){
+            boolean missing = true;
+            for(int i = 0; i < allTds.size(); i++){
+                if(allTds.get(i).getText().contains(userFieldInputsMap.get(eachField))){
+                    missing = false;
+                    break;
+                }
+            }
+            if (missing)
+                result = "fail";
+        }
+        return result;
+    }
+
+
 
 }
+

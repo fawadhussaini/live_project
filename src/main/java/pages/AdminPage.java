@@ -27,6 +27,7 @@ public class AdminPage {
     @FindBy(id = "submit-btn")
     public WebElement deleteBtnsWarning;
 
+
     //this xpath locates edit button at employee ID 0009 First Name Sopisa
     @FindBy(xpath = "//tbody/tr[1]/td[5]/button[1]")
     public WebElement editEmpDataBtn;
@@ -47,6 +48,26 @@ public class AdminPage {
 //    public List<WebElement> countForEmpDataTable;
 
 
-    }
 
+    @FindBy(xpath = "//input[@name='id']")
+    public WebElement Id;
+
+    @FindBy(xpath = "//input[@name='firstName']")
+    public WebElement FirstName;
+
+    @FindBy(xpath = "//input[@name='lastName']")
+    public WebElement LastName;
+
+    @FindBy(xpath = "//select[@name='role']")
+    public WebElement SelectRole;
+
+    @FindBy(xpath = "//select[@name='department']")
+    public WebElement SelectDepartment;
+
+    @FindBy(xpath = "//button[@class='btn btn-success']")
+    public WebElement Enter;
+
+    @FindBy(xpath = "//tbody//tr")
+    public WebElement userTableRows;
+}
 
