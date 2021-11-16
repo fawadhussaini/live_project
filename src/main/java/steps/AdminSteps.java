@@ -21,10 +21,6 @@ public class AdminSteps {
     public void iShouldNotBeAbleToDeleteRoleOrDepartmentIfItIsAssignedToAnEmployee() throws InterruptedException {
         Assert.assertFalse(impl.deleteRoleOrDepartment());
     }
-//    @Given("I navigate to homepage")
-//    public void iNavigateToHomepage() {
-//        impl.navigateToLoginPage();
-//    }
 
     @When("I input {string} as {string}")
     public void i_input_as(String inputFieldName, String value) {
@@ -41,6 +37,4 @@ public class AdminSteps {
     public void employeeIsPopulateInTheDataTable() {
         Assert.assertEquals("success", impl.verifyEachUserFields());
     }
-
-
 }

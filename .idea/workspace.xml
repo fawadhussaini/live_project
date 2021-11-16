@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cea8ca6c-2225-4f71-a835-d6befd40a96d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/impl/AdminImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/impl/AdminImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AdminPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/steps/AdminSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/AdminSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/Admin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/Admin.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/User.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/User.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/steps/AdminSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/steps/AdminSteps.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
