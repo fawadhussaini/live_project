@@ -58,36 +58,9 @@ public class AdminImpl {
         return false;
     }
 
-    //this method is used for test Edit button at employee data table is enabled or not
-    public boolean isEnabled() {
-//        boolean isEnabled = page.editEmpDataBtn.isEnabled();
-//
-//        if (isEnabled) {
-//            System.out.println("Edit button is enabled");
-//
-//        } else {
-//            System.out.println("Edit button is not enabled");
-//        }
-        return page.editEmpDataBtn.isEnabled();
-    }
-
-
-
-
-
-    // this method used for get text or read text such as I want to read "sdet" and compared and test purpose.
-    // if someone wants to use it for read or get text they can use this as well by add another cases.
-    public String getText(String text) {
-        String actualText = "";
-
-        switch (text.toLowerCase()) {
-            case "sdet":
-                actualText = getPage().roleSdet0009.getText();
-                break;
-            default:
-                System.out.println("text was not found");
-        }
-        return actualText;
-    }
+//    //this method is used for test Edit button at employee data table is enabled or not
+//    public boolean isEnabled() {
+//        return page.editEmpDataBtn.isEnabled();
+//    }
 
 }

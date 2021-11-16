@@ -23,36 +23,18 @@ public class AdminSteps {
         Assert.assertFalse(impl.deleteRoleOrDepartment());
     }
 
-    @When("I click on edit employee data button")
-    public void iClickOnEditEmployeeDataButton() {
-       Assert.assertTrue("Edit button is enabled", impl.isEnabled());
 
-    }
+    @Then("I verify {string} button is enabled")
+    public void iVerifyButtonIsEnabled(String btnName) {
+        boolean enabled = false;
 
-    @And("I should be able to change employee role from {string}")
-    public void iShouldBeAbleToChangeEmployeeRoleFrom(String text) {
+        switch (btnName.toLowerCase()){
+            case "Edit": enabled = impl.getPage().editEmpDataBtn.isEnabled();
+                break;
+            case "Delete": enabled = impl.getPage().deleteEmpDataBtn.isEnabled();
+                break;
+        }
 
-    }
-
-    @Then("I should seeing new employee role {string}")
-    public void iShouldSeeingNewEmployeeRole(String text) {
-        String actualText = impl.getText(text);
-        Assert.assertNotEquals(text, actualText);
-    }
-
-
-    @When("I click on delete employee data button")
-    public void iClickOnDeleteEmployeeDataButton() {
-        
-    }
-
-    @Then("I should not see the employee data that I deleted")
-    public void iShouldNotSeeTheEmployeeDataThatIDeleted() {
-
-    }
-
-
-    @Given("the following employee data")
-    public void theFollowingEmployeeData() {
+        Assert.assertTrue(enabled);
     }
 }

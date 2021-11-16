@@ -31,13 +31,22 @@ public class AdminPage {
     @FindBy(xpath = "//tbody/tr[1]/td[5]/button[1]")
     public WebElement editEmpDataBtn;
 
+    //this xpath locates Role:sdet from id 0009
     @FindBy(xpath = "//tbody[1]/tr[1]/td[3]")
     public WebElement roleSdet0009;
 
-    public void waitForElementClickability(WebElement element) {
-        WebDriverWait wait = new WebDriverWait(WebDriverUtils.getDriver(), 10);
-        wait.until(ExpectedConditions.elementToBeClickable(element));
+    //this xpath locates delete button at employee data ID 11 Pati Dz
+    @FindBy(xpath = "//tbody/tr[47]/td[5]/button[2]")
+    public WebElement deleteEmpDataBtn;
+
+    //this xpath locates display option ALL
+    @FindBy(xpath = "//*[@id=\"root\"]/div[2]/div/div[2]/button[4]")
+    public WebElement allDisplayBtn;
+
+//    @FindBy(xpath = "//*[@id=\"root\"]/div[2]/table/tbody/tr")
+//    public List<WebElement> countForEmpDataTable;
+
 
     }
-}
+
 

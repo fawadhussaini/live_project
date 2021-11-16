@@ -11,15 +11,19 @@ Feature: Admin page scenarios
   Scenario: I should not be able to delete Role or Department if it is assigned to an employee
     Then I should not be able to delete Role or Department if it is assigned to an employee
 
-  Scenario: I need options to Edit employees in Employee data table
-    When I click on edit employee data button
-    And I should be able to change employee role from "sdet"
-    Then I should seeing new employee role "security"
+#  Scenario: I need options to Edit employees in Employee data table
+#    When I click on edit employee data button
+#    And I should be able to change employee role from "sdet"
+#    Then I should seeing new employee role "security"
+#
+#  Scenario: I need option to Delete employee in Employee data table
+#    When I click on delete employee data button
+#    Then I should not see the employee data that I deleted
 
-  Scenario: I need option to Delete employee in Employee data table
-    Given the following employee data
-    | ID   | First Name | Last Name | Role | Department |
-    | 0009 | Sopisa     | GP        | sdet | Security   |
-    When I click on delete employee data button
-    Then I should not see the employee data that I deleted
+  Scenario Outline: As an admin I need options to Edit or Delete employees in Employee data table
+    Then I verify "<button name>" button is enabled
+    Examples:
+      |button name|
+      |Edit       |
+      |Delete     |
 
