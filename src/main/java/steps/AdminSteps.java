@@ -4,6 +4,7 @@ import impl.AdminImpl;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.junit.Assert;
 import pages.AdminPage;
 import utils.SeleniumUtils;
@@ -22,6 +23,7 @@ public class AdminSteps {
     public void iShouldNotBeAbleToDeleteRoleOrDepartmentIfItIsAssignedToAnEmployee() throws InterruptedException {
         Assert.assertFalse(impl.deleteRoleOrDepartment());
     }
+<<<<<<< HEAD
 
     @Then("I should be able to see the New Employee Section")
     public void iShouldBeAbleToSeeTheNewEmployeeSection() {
@@ -36,4 +38,28 @@ public class AdminSteps {
     public void iShouldBeAbleToSeeTheEmployeeTable() {
         Assert.assertTrue(impl.empTableEx());
     }
+=======
+//    @Given("I navigate to homepage")
+//    public void iNavigateToHomepage() {
+//        impl.navigateToLoginPage();
+//    }
+
+    @When("I input {string} as {string}")
+    public void i_input_as(String inputFieldName, String value) {
+        impl.fillInputField(inputFieldName, value);
+    }
+
+    @Then("I click Enter button")
+    public void iClickEnterButton() throws InterruptedException {
+        impl.getPage().Enter.click();
+        Thread.sleep(2000);
+    }
+
+    @Then("Employee is populate in the data table")
+    public void employeeIsPopulateInTheDataTable() {
+        Assert.assertEquals("success", impl.verifyEachUserFields());
+    }
+
+
+>>>>>>> f294fad8988e97251d0c7b65d36e67e0a28e4aef
 }
