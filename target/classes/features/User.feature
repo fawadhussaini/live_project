@@ -11,8 +11,9 @@ Feature: User page
     And I should be able to see table field role
     And I should be able to see table field department
 
+  @LogScreen
   Scenario:  Verify Employee is populate as User
-    When I input "ID" as "1010"
+    When I input "ID" as "0002"
     And I input "firstname" as "GamesUser"
     And I input "lastname" as "WongUser"
     And  I input "Selecrole" as "QA"

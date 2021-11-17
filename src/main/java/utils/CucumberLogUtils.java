@@ -48,4 +48,6 @@ public class CucumberLogUtils {
         Calendar calendar = Calendar.getInstance();
         return dateFormat.format(calendar.getTime());
     }
+
+
 }

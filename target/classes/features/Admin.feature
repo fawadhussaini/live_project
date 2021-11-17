@@ -11,8 +11,9 @@ Feature: Admin page scenarios
   Scenario: I should not be able to delete Role or Department if it is assigned to an employee
     Then I should not be able to delete Role or Department if it is assigned to an employee
 
+    @LogScreen
   Scenario:  Verify Employee is populate as Admin
-    When I input "ID" as "1011"
+    When I input "ID" as "0001"
     And I input "firstname" as "GamesAdmin"
     And I input "lastname" as "WongAdmin"
     And  I input "Selecrole" as "sdet"

@@ -5,9 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import pages.AdminPage;
-import utils.ConfigReader;
 import utils.SeleniumUtils;
-import utils.WebDriverUtils;
 
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -17,8 +15,6 @@ public class AdminImpl {
 
 
     AdminPage page = new AdminPage();
-
-
 
     public AdminPage getPage() {
         if(page == null){
@@ -98,6 +94,7 @@ public class AdminImpl {
             boolean missing = true;
             for(int i = 0; i < allTds.size(); i++){
                 if(allTds.get(i).getText().contains(userFieldInputsMap.get(eachField))){
+                    //SeleniumUtils.highlightElement(impl.getPage().row);
                     missing = false;
                     break;
                 }
@@ -107,7 +104,5 @@ public class AdminImpl {
         }
         return result;
     }
-
-
 }
 
