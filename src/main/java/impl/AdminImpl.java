@@ -68,11 +68,7 @@ public class AdminImpl {
         return false;
     }
 
-<<<<<<< HEAD
-    public boolean empTableEx() {
-        return page.employeeTable.isDisplayed();
-    }
-=======
+
     Map<String, String> userFieldInputsMap = new LinkedHashMap<>();
 
     public void fillInputField(String inputFieldName, String value){
@@ -114,6 +110,6 @@ public class AdminImpl {
     }
 
 
->>>>>>> f294fad8988e97251d0c7b65d36e67e0a28e4aef
+
 }
 
