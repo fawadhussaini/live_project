@@ -26,20 +26,6 @@ public class AdminSteps {
 
     }
 
-    @Then("I verify {string} button is enabled")
-    public void iVerifyButtonIsEnabled(String btnName)  {
-        boolean enabled = false;
-
-        switch (btnName.toLowerCase()){
-            case "Edit": enabled = impl.getPage().editEmpDataBtn.isEnabled();
-                break;
-            case "Delete": enabled = impl.getPage().deleteEmpDataBtn.isEnabled();
-                break;
-        }
-
-        Assert.assertTrue(enabled);
-    }
-
 
 
     @When("I input {string} as {string}")

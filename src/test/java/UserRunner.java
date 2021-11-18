@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
                 "rerun:target/failed-scenarios/User.txt"},
         features = "src/main/resources/features/User.feature",
         glue = {"steps"},
-        stepNotifications = true
-        // tags = "@user-mgt"
+        stepNotifications = true,
+         tags = "@user"
 )
 
 

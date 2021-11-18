@@ -4,6 +4,7 @@ Feature: User page
     Given I navigate to Login page
     And I enter username as  "user" and password as "user123" and click on Sign in button
 
+    @user
   Scenario: Verify employee data table
     Then  I should be able to see table field id
     And I should be able to see table field first name

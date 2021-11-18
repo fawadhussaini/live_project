@@ -3,6 +3,7 @@ package steps;
 
 import impl.UserImpl;
 import io.cucumber.java.en.Then;
+import utils.CucumberLogUtils;
 
 public class UserSteps {
 
@@ -26,12 +27,16 @@ public class UserSteps {
     @Then("I should be able to see table field role")
     public void i_should_be_able_to_see_table_field_role() {
 
+        CucumberLogUtils.logPass("Role tab", true);
         impl.getPage().roleTable.isDisplayed();
     }
     @Then("I should be able to see table field department")
     public void i_should_be_able_to_see_table_field_department() {
-
+        CucumberLogUtils.logPass("Department tab", true);
         impl.getPage().departmentTable.isDisplayed();
+
     }
+
+
 
 }

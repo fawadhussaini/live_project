@@ -12,6 +12,7 @@ public class CucumberLogUtils {
     private static Scenario currentScenario;
 
     public static void initScenario(Scenario scenario){
+
         currentScenario = scenario;
     }
 
