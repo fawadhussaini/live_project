@@ -23,7 +23,7 @@ public class AdminSteps {
     public void iShouldNotBeAbleToDeleteRoleOrDepartmentIfItIsAssignedToAnEmployee() throws InterruptedException {
         Assert.assertFalse(impl.deleteRoleOrDepartment());
     }
-<<<<<<< HEAD
+
 
     @Then("I should be able to see the New Employee Section")
     public void iShouldBeAbleToSeeTheNewEmployeeSection() {
@@ -38,11 +38,7 @@ public class AdminSteps {
     public void iShouldBeAbleToSeeTheEmployeeTable() {
         Assert.assertTrue(impl.empTableEx());
     }
-=======
-//    @Given("I navigate to homepage")
-//    public void iNavigateToHomepage() {
-//        impl.navigateToLoginPage();
-//    }
+
 
     @When("I input {string} as {string}")
     public void i_input_as(String inputFieldName, String value) {
@@ -61,5 +57,4 @@ public class AdminSteps {
     }
 
 
->>>>>>> f294fad8988e97251d0c7b65d36e67e0a28e4aef
 }
