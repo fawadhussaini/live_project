@@ -66,6 +66,7 @@ public class EditEmpSteps {
     @Then("I should not see employee data that I deleted")
     public void iShouldNotSeeEmployeeDataThatIDeleted() {
 
+        //try to search Sophia and see if it shows up or not
         impl.getPage().filterEnterKeyword.sendKeys("Sophia");
         impl.getPage().searchBtn.click();
         Assert.assertTrue(impl.getPage().noResultToDisplay.isDisplayed());
