@@ -25,7 +25,7 @@ public class AdminPage {
     @FindBy(id = "submit-btn")
     public WebElement deleteBtnsWarning;
 
-<<<<<<< HEAD
+
     @FindBy(css = ".container .table")
     public WebElement employeeTable;
 
@@ -46,7 +46,7 @@ public class AdminPage {
 
 
 
-=======
+
     @FindBy(xpath = "//input[@name='id']")
     public WebElement Id;
 
@@ -67,5 +67,5 @@ public class AdminPage {
 
     @FindBy(xpath = "//tbody//tr")
     public WebElement userTableRows;
->>>>>>> f294fad8988e97251d0c7b65d36e67e0a28e4aef
+
 }
