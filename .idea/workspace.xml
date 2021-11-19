@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
     <list default="true" id="cea8ca6c-2225-4f71-a835-d6befd40a96d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/impl/AdminImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/impl/AdminImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/AdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AdminPage.java" afterDir="false" />
@@ -11,6 +12,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/features/Admin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/Admin.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/features/User.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/User.feature" afterDir="false" />
     </list>
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,15 +80,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Verify Employee is populate as User" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/User.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/Admin.feature" />
       <option name="GLUE" value="steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="live_project" />
+
+      <option name="NAME_FILTER" value="^I should be able to see Employee Input form and Employee data table displayed$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^I should be able to see Employee Input form and Employee data table displayed$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: I should be able to see Employee Input form and Employee data table displayed" />
+
       <option name="NAME_FILTER" value="^Verify Employee is populate as User$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify Employee is populate as User$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: Verify Employee is populate as User" />
+
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -130,10 +138,12 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CukesRunner" />
-        <item itemvalue="Cucumber Java.Scenario: Verify Employee is populate as Admin" />
-        <item itemvalue="Cucumber Java.Scenario: Verify Employee is populate as User" />
+
+        <item itemvalue="Cucumber Java.Scenario: I should be able to see Employee Input form and Employee data table displayed" />
         <item itemvalue="Cucumber Java.Scenario: Verify employee data table" />
         <item itemvalue="Cucumber Java.Feature: User" />
+        <item itemvalue="Cucumber Java.Feature: Login" />
+
       </list>
     </recent_temporary>
   </component>
