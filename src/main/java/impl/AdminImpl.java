@@ -6,6 +6,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import pages.AdminPage;
 import utils.ConfigReader;
+import utils.CucumberLogUtils;
 import utils.SeleniumUtils;
 import utils.WebDriverUtils;
 
@@ -52,7 +53,7 @@ public class AdminImpl {
             if (!page.countsForRolesAndDepartments.get(i).getText().equals("0)")) {
 
                 page.deleteBtns.get(i).click();
-
+                CucumberLogUtils.logPass("Unable to delete", true);
                 try {
                     //if the warning message pops up it means we were unable to delete
                     page.deleteBtnsWarning.click();

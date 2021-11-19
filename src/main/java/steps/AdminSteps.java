@@ -6,6 +6,8 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import pages.AdminPage;
+import utils.CucumberLogUtils;
 import utils.WebDriverUtils;
 
 public class AdminSteps {
@@ -15,11 +17,19 @@ public class AdminSteps {
     @Then("I should see a number for each role and department")
     public void iShouldSeeANumberForEachRoleAndDepartment() throws InterruptedException {
         Assert.assertTrue(impl.countForRolesAndDepartments());
+        CucumberLogUtils.logPass("Each role and department has a number next to it", true);
     }
 
     @Then("I should not be able to delete Role or Department if it is assigned to an employee")
     public void iShouldNotBeAbleToDeleteRoleOrDepartmentIfItIsAssignedToAnEmployee() throws InterruptedException {
         Assert.assertFalse(impl.deleteRoleOrDepartment());
+
+    }
+
+    @And("If role or department was successfully deleted the test should fail")
+    public void ifRoleOrDepartmentWasSuccessfullyDeletedTheTestShouldFail() {
+        Assert.assertEquals(impl.getPage().deleteBtns.size(), impl.getPage().countsForRolesAndDepartments.size());
+        CucumberLogUtils.logPass("No role or department, if it is assigned to an employee,  was deleted", true);
     }
 //    @Given("I navigate to homepage")
 //    public void iNavigateToHomepage() {
@@ -41,6 +51,7 @@ public class AdminSteps {
     public void employeeIsPopulateInTheDataTable() {
         Assert.assertEquals("success", impl.verifyEachUserFields());
     }
+
 
 
 }
